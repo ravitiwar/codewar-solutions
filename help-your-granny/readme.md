@@ -25,7 +25,7 @@ Can you help your granny and give her approximately the distance to travel?
 Notes
 If you have some difficulty to see the tour I made a maybe useful drawing:
 
-()[http://i.imgur.com/dG7iWXhm.jpg]
+(http://i.imgur.com/dG7iWXhm.jpg)[]
 
 All languages:
 See the type of data in the sample tests.
