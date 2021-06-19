@@ -21,8 +21,6 @@ function maxArea($h, $w, $horizontalCuts, $verticalCuts)
         $column_cnt = isset($verticalCuts[$column]) ? $verticalCuts[$column] : $w;
         $vertical_max = max(($column_cnt - $verticalCut), $vertical_max);
     }
-
-
     return $vertical_max * $horizontal_max;
 
 }
