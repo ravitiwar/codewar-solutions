@@ -90,6 +90,5 @@ function number2words(int $n): string
         $word=trim($word);
         $num_to_words = "{$word} {$sufix}{$num_to_words}";
     }
-    $num_to_words="";
     return trim($num_to_words);
 }
