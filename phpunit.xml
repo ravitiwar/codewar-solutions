@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<phpunit colors="true" bootstrap="./vendor/autoload.php" testdox="true">
+<phpunit colors="true" bootstrap="./vendor/autoload.php" testdox="true" stopOnFailure="false">
     <testsuites>
         <testsuite name="Help Granny">
             <directory>./help-your-granny</directory>
+            <directory>./find-the-smallest</directory>
+            <directory>./write-out-numbers</directory>
         </testsuite>
 
     </testsuites>
