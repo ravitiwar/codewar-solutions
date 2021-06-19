@@ -8,6 +8,7 @@
 <!--            <directory>./Getting-along-with-Integer-Partitions</directory>-->
             <directory>./nesting-structure-comparison</directory>
             <directory>./reverse-or-rotate</directory>
+            <directory>./rgb-to-hex-conversion</directory>
         </testsuite>
     </testsuites>
 </phpunit>
