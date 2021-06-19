@@ -30,8 +30,7 @@ jobs:
     needs: setup_envoirement
     steps:
       - uses: actions/checkout@v1
-
-        - name: Run tests
-          run: ./vendor/bin/phpunit
-          env:
-            APP_ENV: testing
+      - name: Run tests
+        run: ./vendor/bin/phpunit
+        env:
+          APP_ENV: testing
