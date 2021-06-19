@@ -16,7 +16,3 @@ function same_structure_as($ar1, $ar2)
     nest($ar2);
     return ($ar1 === $ar2);
 }
-
-
-echo same_structure_as([1, 1, 1], [2, 2, 2]); // => true
-echo same_structure_as([1, [1, 1]], [[2, 2], 2]); //false

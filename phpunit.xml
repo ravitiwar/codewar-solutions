@@ -6,7 +6,7 @@
             <directory>./find-the-smallest</directory>
             <directory>./write-out-numbers</directory>
 <!--            <directory>./Getting-along-with-Integer-Partitions</directory>-->
+            <directory>./nesting-structure-comparison</directory>
         </testsuite>
-
     </testsuites>
 </phpunit>
