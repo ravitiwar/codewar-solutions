@@ -1,6 +1,8 @@
 name: Tests (PHP)
 
-on: [push]
+on:
+  -push
+      -master
 
 jobs:
   setup_envoirement:
@@ -20,11 +22,3 @@ jobs:
 
       - name: Run tests
         run: ./vendor/bin/phpunit
-        env:
-          APP_ENV: testing
-
-      - name: Upload artifacts
-        uses: actions/upload-artifact@master
-        with:
-          name: Logs
-          path: ./*
