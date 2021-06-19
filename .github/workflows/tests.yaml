@@ -29,7 +29,6 @@ jobs:
     runs-on: ubuntu-latest
     needs: setup_envoirement
     steps:
-      - uses: actions/checkout@v1
       - name: Run tests
         run: ./vendor/bin/phpunit
         env:
