@@ -5,10 +5,11 @@
             <directory>./help-your-granny</directory>
             <directory>./find-the-smallest</directory>
             <directory>./write-out-numbers</directory>
-<!--            <directory>./Getting-along-with-Integer-Partitions</directory>-->
+            <!--            <directory>./Getting-along-with-Integer-Partitions</directory>-->
             <directory>./nesting-structure-comparison</directory>
             <directory>./reverse-or-rotate</directory>
             <directory>./rgb-to-hex-conversion</directory>
+            <directory>./factorial-decomposition</directory>
         </testsuite>
     </testsuites>
 </phpunit>
