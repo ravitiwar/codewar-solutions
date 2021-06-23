@@ -10,6 +10,7 @@
             <directory>./reverse-or-rotate</directory>
             <directory>./rgb-to-hex-conversion</directory>
             <directory>./factorial-decomposition</directory>
+            <directory>./next-bigger-number</directory>
         </testsuite>
     </testsuites>
 </phpunit>
