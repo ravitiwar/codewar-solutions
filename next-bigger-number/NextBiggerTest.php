@@ -6,9 +6,9 @@ class NextBiggerTest extends \PHPUnit\Framework\TestCase
     public function testBasicTests()
     {
         require 'index.php';
-        $this->assertEquals(21, nextBigger(12));
-        $this->aassertEquals(531, nextBigger(513));
-        $this->assertEquals(2071, nextBigger(2017));
+        $this->assertSame(21, nextBigger(12));
+        $this->assertSame(531, nextBigger(513));
+        $this->assertSame(2071, nextBigger(2017));
         $this->assertSame(441, nextBigger(414));
         $this->assertSame(414, nextBigger(144));
         $this->assertSame(123456798, nextBigger(123456789));

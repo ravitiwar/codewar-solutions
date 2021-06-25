@@ -1,31 +1,25 @@
 <?php
 function nextBigger($n)
 {
-    $numbers = [];
-    $i = 1;
-    while (($n / 10) > 0) {
-        $q = intval($n / 10);
-        $r = $n % 10;
-        $max = empty($numbers) ? 0 : max($numbers);
-        if ($max > $r) {
-            $n = intval($q / 10);
-            $n = $n * $i;
-            $numbers[] = $r;
-            break;
-        }
-        $i *= 10;
-        $numbers[] = $r;
-        $n = $q;
-    }
-    asort($numbers);
+    $numbers = str_split((string)$n);
+    $numbers = array_reverse($numbers);
+    $temp = [];
     foreach ($numbers as $index => $number) {
-        if ($number > $r) {
-            $number *= ($i / 10);
-            unset($numbers[$index]);
+        unset($numbers[$index]);
+        $temp[] = $number;
+        if (isset($numbers[$index + 1]) && ($number > $numbers[$index + 1])) {
+            asort($temp);
+            foreach ($temp as $i => $number) {
+                if ($number > $numbers[$index + 1]) {
+                    $temp[] = $numbers[$index + 1];
+                    $numbers[$index + 1] = $number;
+                    unset($temp[$i]);
+                    asort($temp);
+                    break;
+                }
+            }
             break;
         }
     }
-    $numbers = (int)join($numbers);
-    return $n ? $n + $numbers : -1;
+    return empty($numbers) ? -1 : ((int)(join(array_reverse($numbers)) . join($temp)));
 }
-
