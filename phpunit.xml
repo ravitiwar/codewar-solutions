@@ -11,6 +11,7 @@
             <directory>./rgb-to-hex-conversion</directory>
             <directory>./factorial-decomposition</directory>
             <directory>./next-bigger-number</directory>
+            <directory>./where-my-anagrams-at</directory>
         </testsuite>
     </testsuites>
 </phpunit>
