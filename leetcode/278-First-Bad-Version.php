@@ -1,13 +1,9 @@
 <?php
-/* The isBadVersion API is defined in the parent class VersionControl.
-      public function isBadVersion($version){} */
 
-class VersionControl{
-    protected function isBadVersion($n):bool{
-
-    }
-}
-
+/**
+ * Class Solution
+ * @link https://leetcode.com/problems/first-bad-version/
+ */
 class Solution extends VersionControl
 {
     /**
